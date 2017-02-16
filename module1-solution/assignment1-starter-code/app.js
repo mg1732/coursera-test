@@ -11,6 +11,7 @@ function LunchCheckController ($scope,
   $scope.calcMessage = "";
 
   $scope.calcDishes = function () {
+    //ignoring empty dishes str, but not ingoring spaces
     var dishesCount = $scope.dishes.split(',').filter(Boolean).length;
     if (dishesCount == 0) {
       $scope.calcMessage = $scope.dishes;
