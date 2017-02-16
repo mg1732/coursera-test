@@ -8,7 +8,7 @@ function LunchCheckController ($scope,
                        $filter,
                        $injector) {
   $scope.dishes = "";
-  $scope.calcMessage = "abc";
+  $scope.calcMessage = "";
 
   $scope.calcDishes = function () {
     var dishesCount = $scope.dishes.split(',').filter(Boolean).length;
